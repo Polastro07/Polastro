@@ -1,0 +1,9 @@
+# Entradas
+deposito = float(input("Depósito inicial: R$ "))
+juros = float(input("Taxa de juros mensal (%): ")) / 100
+
+# Cálculos e exibição dos valores mês a mês
+for mes in range(1, 25):
+    deposito += deposito * juros
+    print(f"Mês {mes}: R$ {deposito:.2f}")
+    

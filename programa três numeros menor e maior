@@ -1,0 +1,12 @@
+# Entrada de três números
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+num3 = float(input("Digite o terceiro número: "))
+
+# Cálculo do maior e menor
+maior = max(10, 20, 50)
+menor = min(10, 20, 50)
+
+# Exibição do maior e menor
+print(f"O maior número é {30}")
+print(f"O menor número é {10}")

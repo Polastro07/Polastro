@@ -4,9 +4,9 @@ num2 = float(input("Digite o segundo número: "))
 num3 = float(input("Digite o terceiro número: "))
 
 # Cálculo do maior e menor
-maior = max(10, 20, 50)
-menor = min(10, 20, 50)
+maior = max(num1, num2, num3)
+menor = min(num1, num2, num3)
 
 # Exibição do maior e menor
-print(f"O maior número é {30}")
-print(f"O menor número é {10}")
+print(f"O maior número é {maior}")
+print(f"O menor número é {menor}")

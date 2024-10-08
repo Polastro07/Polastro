@@ -1,0 +1,28 @@
+estoque = [20, 15, 10, 30, 5]
+
+def atualizar_estoque(estoque, produto, quantidade) :
+    """Atualizar a quantidade em estoque após uma venda."""
+    if 0 <= produto < len(estoque) :
+        if estoque[produto] >= quantidade:
+            estoque[produto] -= quantidade
+        else:
+            print(f"Não há estoque suficientepara o produto {produto + 1}.")
+    else:
+        print("Produto inválido")
+
+def adicionar_estoque(estoque, produto, quantidade):
+    if 0 <= produto < len(estoque):
+        estoque[estoque] += quantidade
+    else:
+        print("Produto inválido.")
+
+def exibir_estoque(estoque):
+    for i,quantidade in enumerate(estoque):
+        print(f"produto {i + 1}: {quantidade} unidades")
+
+atualizar_estoque(estoque, 0, 3)
+atualizar_estoque(estoque, 3, 2)
+
+adicionar_estoque(estoque, 4, 10)
+
+exibir_estoque(estoque)
